@@ -1,0 +1,28 @@
+{
+  "name": "otp-sanly/otp-sanly",
+  "description": "Official PHP SDK for OTP Sanly (otp.sanly.dev) — SMS & Email OTP for Turkmenistan",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["otp", "sms", "email", "verification", "turkmenistan", "2fa", "authentication"],
+  "homepage": "https://otp.sanly.dev/developers",
+  "authors": [
+    { "name": "OTP Sanly" }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6"
+  },
+  "autoload": {
+    "psr-4": { "OtpSanly\\": "src/" }
+  },
+  "autoload-dev": {
+    "psr-4": { "OtpSanly\\Tests\\": "tests/" }
+  },
+  "scripts": {
+    "test": "phpunit tests"
+  }
+}
