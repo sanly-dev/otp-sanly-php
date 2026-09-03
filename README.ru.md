@@ -23,7 +23,7 @@ try {
     $sent = $sanly->sendOtp([
         'phone' => '+99361234567', // Только туркменские номера для SMS. Для доставки в любую страну используйте "email".
         'project' => 'Мой сервис',
-        'lang' => 'ru', // 'tk' | 'ru' | 'en' — на каком языке отправить OTP
+        'lang' => 'ru', // 'tm' | 'ru' | 'en' — на каком языке отправить OTP
     ]);
     echo $sent['otpId'] . ': ' . $sent['message'];
 } catch (OtpSanlyException $e) {
