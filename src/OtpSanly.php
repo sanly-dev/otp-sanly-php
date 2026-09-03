@@ -34,8 +34,8 @@ class OtpSanly
      *   email?: string,
      *   project?: string,
      *   lang?: string
-     * } $params Provide "phone" OR "email" (not both). `lang` is "tk"|"ru"|"en" —
-     *   which language to send the OTP in. Defaults to "tk" if omitted.
+     * } $params Provide "phone" OR "email" (not both). `lang` is "tm"|"ru"|"en" —
+     *   which language to send the OTP in. Defaults to "tm" if omitted.
      *   IMPORTANT: since this SDK calls the API server-to-server, the
      *   Accept-Language HTTP header is unreliable — always pass `lang`
      *   explicitly if you support multiple languages for your end users.
